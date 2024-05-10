@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="370.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/fundo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="375.0" fitWidth="601.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Design%20sem%20nome%20(2).png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="179.0" layoutX="211.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/discord.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="141.0" fitWidth="218.0" layoutX="193.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/main-qimg-fdbb7c10a1b4c6b16dfad48091999faa-lq-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane prefHeight="337.0" prefWidth="157.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="73.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="15.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="12.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="email" layoutX="14.0" layoutY="70.0" prefHeight="25.0" prefWidth="166.0" promptText="Digite seu Email ou telefone" />
+                        <ImageView fitHeight="76.0" fitWidth="82.0" layoutX="55.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/qr.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="23.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logue pelo QR-CODE" wrappingWidth="153.29833984375">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="52.0" layoutY="182.0" mnemonicParsing="false" onAction="#entrar" prefHeight="16.0" prefWidth="82.0" style="-fx-background-color: white;" text="Logar">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <PasswordField fx:id="senha" layoutX="12.0" layoutY="133.0" prefHeight="25.0" prefWidth="167.0" promptText="Digite sua Senha.." />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#ff5050" layoutX="433.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nao tem cadastro? faça já seu cadastro " wrappingWidth="153.296875">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="465.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar">
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="420.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="421.0" layoutY="76.0" prefHeight="25.0" prefWidth="163.0" promptText="Digite seu Email ou telefone" />
+                  <Text fill="WHITE" layoutX="421.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Line endX="5.0" endY="-138.0" layoutX="194.0" layoutY="148.0" startX="5.0" startY="186.0" stroke="WHITE" />
+                  <Line endX="5.0" endY="-138.0" layoutX="400.0" layoutY="146.0" startX="5.0" startY="186.0" stroke="WHITE" />
+                  <Button layoutX="451.0" layoutY="204.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: white;" text="Cadastrar">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <PasswordField layoutX="420.0" layoutY="147.0" prefHeight="25.0" prefWidth="164.0" promptText="Digite sua Senha.." />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="79.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
