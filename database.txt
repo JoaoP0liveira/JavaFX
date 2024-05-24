@@ -1,0 +1,6 @@
+1;lucas;100
+2;joao;50
+3;emerson;123
+4;joaoaaa;555
+5;ddsds;123
+6;sdsd;5

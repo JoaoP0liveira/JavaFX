@@ -2,26 +2,44 @@ package model;
 
 public class User {
 
-	private String email;
-	private String senha;
+	private long id;
 	
-	public User(String email, String senha) {
+	private String nomeSv;
+	private int membrosSv;
+	
+	public User(long id, String nomeSv, int membrosSv) {
 		super();
-		this.email = email;
-		this.senha = senha;
+		this.id = id;
+		this.nomeSv = nomeSv;
+		this.membrosSv = membrosSv;
 	}
 	
-	public String getEmail() {
-		return email;
+	public User() {}
+
+	public long getId() {
+		return id;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+
+	public void setId(long id) {
+		this.id = id;
 	}
-	public String getSenha() {
-		return senha;
+
+	public String getNomeSv() {
+		return nomeSv;
 	}
-	public void setSenha(String senha) {
-		this.senha = senha;
+
+	public void setNomeSv(String nomeSv) {
+		this.nomeSv = nomeSv;
 	}
+
+	public int getMembrosSv() {
+		return membrosSv;
+	}
+
+	public void setMembrosSv(int membrosSv) {
+		this.membrosSv = membrosSv;
+	}
+	
+	
 	
 }

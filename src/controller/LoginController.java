@@ -45,8 +45,8 @@ public class LoginController {
 	}
 	public void mensagemErro() {
 		Alert alert = new Alert(Alert.AlertType.ERROR);
-		alert.setTitle("Sua senha está errada");
-		alert.setContentText("Senha Incorreta!");
+		alert.setTitle("Senha Incorreta!!");
+		alert.setContentText("Email inválido!!");
 		alert.setHeaderText(null);
 		alert.showAndWait();
 	}
